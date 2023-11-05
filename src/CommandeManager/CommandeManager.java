@@ -9,7 +9,7 @@ public class CommandeManager {
 
     public static CommandeManager getInstance() {
         // TODO: Implémenter le pattern Singleton pour assurer une seule instance de CommandeManager
-
+        return instance;
     }
 
     // Méthodes pour ajouter, supprimer, récupérer des commandes, etc.
