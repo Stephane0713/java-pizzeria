@@ -21,8 +21,8 @@ public class OrderManager {
         return instance;
     }
 
-    public void addOrder(String id, Pizza pizza, int quantite, String deliveryAddress) {
-        Order order = new Order(pizza, quantite, deliveryAddress);
+    public void addOrder(String id, Pizza pizza, int quantity, String deliveryAddress) {
+        Order order = new Order(pizza, quantity, deliveryAddress);
         orders.put(id, order);
     }
 

@@ -56,8 +56,8 @@ class OrderManagerTest {
         assertNotNull(order1);
         assertNotNull(order2);
 
-        assertEquals(2, order1.getQuantite());
-        assertEquals(3, order2.getQuantite());
+        assertEquals(2, order1.getQuantity());
+        assertEquals(3, order2.getQuantity());
 
         assertEquals("123 Rue de Jacky", order1.getDeliveryAddress());
         assertEquals("321 Rue de Joël", order2.getDeliveryAddress());

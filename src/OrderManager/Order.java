@@ -5,20 +5,20 @@ import Pizza.Pizza;
 public class Order {
 
     private Pizza pizza;
-    private int quantite;
+    private int quantity;
     private String deliveryAddress;
 
-    public Order(Pizza pizza, int quantite, String deliveryAddress) {
+    public Order(Pizza pizza, int quantity, String deliveryAddress) {
         this.pizza = pizza;
-        this.quantite = quantite;
+        this.quantity = quantity;
         this.deliveryAddress = deliveryAddress;
     }
     public Pizza getPizza() {
         return pizza;
     }
 
-    public int getQuantite() {
-        return quantite;
+    public int getQuantity() {
+        return quantity;
     }
 
     public String getDeliveryAddress() {
