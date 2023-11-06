@@ -30,15 +30,37 @@ public class Pizza {
     }
 
     static class PizzaBuilder {
-        // Attributs pour construire une Pizza
         Pizza pizza;
 
-        // TODO: Créer des méthodes pour définir chaque attribut du Builder
-        // Chaque méthode doit renvoyer l'instance du Builder pour permettre le chaînage des méthodes
+        public PizzaBuilder() {
+            this.pizza = new Pizza();
+        }
+
+        public PizzaBuilder setPate(String pate) {
+            pizza.pate = pate;
+            return this;
+        }
+
+        public PizzaBuilder setSauce(String sauce) {
+            pizza.sauce = sauce;
+            return this;
+        }
+
+        public PizzaBuilder setGarnitures(String[] garnitures) {
+            pizza.garnitures = garnitures;
+            return this;
+        }
 
         public Pizza build() {
-            // TODO: Utiliser les attributs du Builder pour créer une nouvelle Pizza
             // Assurez-vous de valider les attributs avant de créer la Pizza
+            if (
+                    this.pizza.sauce == null
+                            || this.pizza.pate == null
+                            || this.pizza.garnitures.length == 0
+            ) {
+                throw new RuntimeException("Les informations pour construire la pizza sont incomplètes.");
+            }
+
             return pizza;
         }
     }

@@ -8,7 +8,6 @@ class PizzaFactoryTest {
 
     @Test
     void testCreatePizzaFromage() {
-        // TODO: Tester la méthode createPizza pour une PizzaFromage
         PizzaFactory factory = new PizzaFactory();
         Pizza pizza = factory.createPizza("FROMAGE");
 
@@ -25,7 +24,6 @@ class PizzaFactoryTest {
 
     @Test
     void testCreatePizzaVegetarienne() {
-        // TODO: Tester la méthode createPizza pour une PizzaVegetarienne
         PizzaFactory factory = new PizzaFactory();
         Pizza pizza = factory.createPizza("VEGETARIENNE");
 
@@ -42,7 +40,6 @@ class PizzaFactoryTest {
 
     @Test
     void testCreatePizzaUnknownType() {
-        // TODO: Tester la méthode createPizza pour un type inconnu
         PizzaFactory factory = new PizzaFactory();
         String errorMessage = "Cette pizza ne figure pas dans notre liste de pizza disponible";
 
